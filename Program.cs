@@ -16,4 +16,8 @@ var message = $"My name is {name}, I'm {age.ToWords()} years old and I work as a
 
 Console.WriteLine(message);
 
-Console.WriteLine("Cheers.");
+Console.WriteLine($">> {DateTime.Now.ToOrdinalWords()}");
+
+var secondMessage = $"We are in the day {DateTime.Now.Day.ToWords()} of the month {DateTime.Now.Month.ToWords()} of the year {DateTime.Now.Year.ToWords()}.";
+
+Console.WriteLine(secondMessage);
